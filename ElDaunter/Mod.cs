@@ -13,10 +13,10 @@ namespace ElDaunter
             _modVersion = "Early alpha";
             Log("Does logging work?");
             GameObject go = new GameObject("textdumperultraextreme");
-            go.AddComponent<textdumper>();
+            //go.AddComponent<textdumper>();
             Object.DontDestroyOnLoad(go);
             go.AddComponent<dumpscene>();
-
+            go.AddComponent<DebugDraw>();
             //On.DialogBuilder.ctor += DialogBuilderOnctor;
             
             // Put this component on a gameobject that is never destroyed.
@@ -24,7 +24,7 @@ namespace ElDaunter
             /*
             GameObject go = new GameObject("jqwiuneiouasdf");
             
-            go.AddComponent<DebugDraw>();
+            
             go.AddComponent<dumpscene>();
             Object.DontDestroyOnLoad(go);
             
